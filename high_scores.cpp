@@ -55,7 +55,7 @@ namespace high_scores {
 		}
 		std::cout << "High scores table:" << std::endl;
 		for (const auto &[user, high_score] : user_high_scores) {
-			std::cout << user << ' ' << high_score << std::endl;
+			std::cout << user << " " << high_score << std::endl;
 		}
 	}
 }
