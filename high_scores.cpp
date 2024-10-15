@@ -26,7 +26,7 @@ namespace high_scores {
 			return;
 		}
 
-		out_file << user_name << ' ' << attempts_count << std::endl;
+		out_file << user_name << " " << attempts_count << std::endl;
 	}
 
 	void show_min_high_scores(const std::string& high_scores_filename) {
