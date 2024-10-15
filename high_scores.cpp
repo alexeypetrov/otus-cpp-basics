@@ -7,14 +7,14 @@ namespace high_scores {
     void show_high_scores(const std::string& high_scores_filename) {
         std::ifstream file{high_scores_filename, std::fstream::out};
         if (!file.is_open()) {
-        std::cerr << "Failed to open file for read: " << high_scores_filename << "!" << std::endl;
-        return;
+            std::cerr << "Failed to open file for read: " << high_scores_filename << "!" << std::endl;
+            return;
         }
 
         std::cout << "High scores table:" << std::endl;
         std::string line;
         while (std::getline(file, line)) {
-        std::cout << line << std::endl;
+            std::cout << line << std::endl;
         }
     }
 
